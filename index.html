@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light_gray: hsl(212, 45%, 89%);
+      --gray_blue: hsl(220, 15%, 55%);
+      --dark_blue: hsl(218, 44%, 22%);
+      --border-radius: 15px;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--light_gray);
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .card {
+      min-height: 100px;
+      max-width: 256px;
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 10px;
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+
+    .card-body {
+      word-wrap: break-word;
+      padding: 5px 13px;
+    }
+
+    .card img {
+      border-radius: 12px;
+    }
+
+    .card-body p {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      color: var(--gray_blue);
+    }
+
+    .card-body h1 {
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+      <img src="images/image-qr-code.png" width="256" />
+
+      <div class="card-body">
+        <h1>Imporve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+  </div>
+</body>
+</html>
